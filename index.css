@@ -1,0 +1,237 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1.5;
+    color: #383e45;
+    font-size: 13px;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header  .site-title img {
+    width: 120px;
+    padding-top: 10px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a{
+    color: #24292e;
+    font-size: 12px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    opacity: 0.7;
+}
+
+.mainvisual img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-title{
+    display: inline-block;
+    font-size: 35px;
+    border-bottom: 1px solid #383e45;
+    margin-bottom: 60px;
+}
+
+.content-title {
+    font-size: 14px;
+    margin:10px 0;
+}
+.about-wrapper{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-wrapper .content{
+    display: flex;
+    justify-content: center;
+}
+.about-wrapper .content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.about-wrapper .content .text {
+    text-align: left;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.bicycle-wrapper{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bicycle-wrapper .contents{
+    display: inline-block;
+    display: flex;
+}
+
+.bicycle-wrapper .contents .content{
+    width: calc(100%/3);
+    margin-right: 15px;
+}
+.bicycle-wrapper .contents .content:last-child{
+    margin-right: 0;
+}
+
+.bicycle-wrapper .contents .content img{
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+@media(max-width:600px){
+    .about .content{
+      flex-direction: column;
+    }
+    .about .content img{
+        margin: 0 auto;
+    }
+    .about .content .text {
+        margin: 0 auto;
+    }
+    .mainvisual img{
+        height: 100vh;
+        height: calc(100vh-60px)
+    }
+}
+
+@media(max-width:600px) {
+    .bicycle-wrapper .contents{
+        flex-direction: column;
+    }
+
+    .bicycle-wrapper .content{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
